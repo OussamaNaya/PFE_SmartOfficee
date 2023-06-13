@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Consulter État</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/Consulte.css">
+		<link rel="stylesheet" href="../css/Accueil.css">
+
+      </head>
+<body>
+	<header>
+        <div class="logo-container">
+          <img src="../image/logo PFE touhami.jpg" alt="Logo Smart Office">
+        </div>
+        <nav>
+          <ul>
+        <li><a href="Accueil.html" id="home-link">Home</a></li>
+        <li><a href="InfoCompte.html" id="account-link">Infos Compte</a></li>
+        <li><a href="#" id="modify-account-link">Modifier Compte</a></li>
+        <li><a href="ConsulteEtat.html" id="consulter-link">Consulter État</a></li>
+        <li><a href="historique.html" id="historique-link">Historique des États</a></li>
+          </ul>
+        </nav>
+      </header>
+	<h1>Consulter les états</h1>
+	<form action="value.html">
+		<label for="select-etat">Sélectionner un état :</label>
+		<select id="select-etat" name="etat">
+			<option value="humidite" name="humidite">Humidité</option>
+			<option value="gaz" name="gaz">Niveau de gaz</option>
+			<option value="fumee" name="fumee">Fumée</option>
+		</select>
+		<button type="submit">Consulter</button>
+	</form>
+    <script src="test.js"></script>
+	<footer>
+		<div class="logo-container">
+		  <img src="../image/logo PFE touhami.jpg" alt="Logo Smart Office">
+		</div>
+		<p>&copy; 2023 SMI S6 - Encadré par Pr Zahour Omar</p>
+	  </footer>
+	  <script src="../js/Accueil.js"></script>
+	  
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Office - Historique des États</title>
+  <link rel="stylesheet" href="../css/historique.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="../image/logo PFE touhami.jpg" alt="Logo Smart Office">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="Accueil.html" id="home-link">Home</a></li>
+        <li><a href="InfoCompte.html" id="account-link">Infos Compte</a></li>
+        <li><a href="#" id="modify-account-link">Modifier Compte</a></li>
+        <li><a href="ConsulteEtat.html" id="consulter-link">Consulter État</a></li>
+        <li><a href="historique.html" id="historique-link">Historique des États</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="states">
+      <h1>Historique des États</h1>
+      <div class="filters">
+        <label for="gas-filter">Filtrer par gaz :</label>
+        <select id="gas-filter">
+          <option value="all">Tous les gaz</option>
+          <option value="co2">CO2</option>
+          <option value="co">CO</option>
+          <option value="ch4">CH4</option>
+        </select>
+        <label for="smoke-filter">Filtrer par fumée :</label>
+        <select id="smoke-filter">
+          <option value="all">Tous les états de fumée</option>
+          <option value="smoke-detected">Fumée détectée</option>
+          <option value="no-smoke-detected">Pas de fumée détectée</option>
+        </select>
+        <label for="humidity-filter">Filtrer par humidité :</label>
+        <select id="humidity-filter">
+          <option value="all">Tous les états d'humidité</option>
+          <option value="high-humidity">Humidité élevée</option>
+          <option value="normal-humidity">Humidité normale</option>
+          <option value="low-humidity">Faible humidité</option>
+        </select>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Heure</th>
+            <th>Gaz</th>
+            <th>Fumée</th>
+            <th>Humidité</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2023-04-28</td>
+            <td>12:30</td>
+            <td>CO2</td>
+            <td>Pas de fumée détectée</td>
+            <td>Humidité élevée</td>
+          </tr>
+          <tr>
+            <td>2023-04-27</td>
+            <td>09:15</td>
+            <td>CO</td>
+            <td>Fumée détectée</td>
+            <td>Humidité normale</td>
+          </tr>
+          <tr>
+            <td>2023-04-26</td>
+            <td>14:45</td>
+            <td>CH4</td>
+            <td>Pas de fumée détectée</td>
+            <td>Humidité élevée</td>
+          </tr>
+          <tr>
+            <td>2023-04-25</td>
+            <td>16:00</td>
+            <td>CO2</td>
+            <td>Pas de fumée détectée</td>
+            <td>Humidité normale</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo-container">
+      <img src="../image/logo PFE touhami.jpg" alt="Logo Smart Office">
+    </div>
+    <p>&copy; 2023 SMI S6 - Encadré par Pr Zahour Omar</p>
+  </footer>
+  <script src="../js/Accueil.js"></script>
+</body>
+</html>

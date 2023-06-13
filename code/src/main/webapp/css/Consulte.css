@@ -1,0 +1,65 @@
+@charset "UTF-8";
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+}
+
+label {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+select {
+	padding: 5px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+button {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #0062cc;
+}
+
+/* styles spécifiques pour les pages d'état */
+
+table {
+	border-collapse: collapse;
+	margin: 50px auto;
+}
+
+th, td {
+	padding: 10px;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th {
+	background-color: #007bff;
+	color: #fff;
+}
+
+td {
+	background-color: #f7f7f7;
+}
